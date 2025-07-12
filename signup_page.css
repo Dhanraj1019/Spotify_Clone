@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.outerdiv{
+    background-color: rgb(19, 18, 18);
+    padding: 2rem 10rem;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.inerdiv{
+    background-color:black;
+    height: 40rem;
+    width: 100%;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+.topdiv .Logo i{
+    color: white;
+    cursor: pointer;
+}
+.inerdiv img{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.inerdiv button{
+    background-color: black;
+    color: white;
+    height: 3rem;
+    width: 19.8rem;
+    border: 1px solid rgb(153, 151, 151);
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.topdiv button img{
+    margin-right: 1.7rem;
+}
+.inerdiv .topdiv .topbutton{
+    margin-bottom: 1rem;
+}
+.topbutton span{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.topdiv .Logo{
+    position: relative;
+    left: 6rem;
+    font-size: 3rem;
+}
+
+.linediv{
+    height: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.linediv .line{
+    height: 90%;
+    width: 80%;
+    border-top: .1px solid white;
+    align-items: center;
+    opacity: .2;
+}
+
+.botomdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+.botomdiv .div3 a{
+    color: white;
+    margin-right: .4rem;
+}
+.botomdiv button{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+    background-color: rgb(71, 190, 71);
+    border: none;
+}
+.botomdiv div{
+    margin-bottom: 1rem;
+}
+.botomdiv label{
+    font-weight: 700;
+}
+
+/* button{
+    transition: .3s ease;
+} */
+
+.topdiv button:hover{
+    box-shadow: 0 0 4px white;
+    color: white;
+}
+.botomdiv button:hover{
+    transform: scale(1.01,1.01);
+    box-shadow: 0 0 12px rgb(42, 145, 42);
+}
+
+.botomdiv .signupa:hover{
+    color: rgb(82, 239, 82);
+    opacity: 1;
+}
+
+.botomdiv input{
+    all: unset;
+    height: 2.5rem;
+    width: 18rem;
+    border: 1px solid rgb(167, 161, 161);
+    border-radius: 3px;
+    margin-top: .5rem;
+}
+
+
+
+.footer{
+    height: 4rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+}
+.footer a{
+    color: white;
+}
+.footer p{
+    opacity: .4;
+}
+
+@media screen and (max-width=761px){
+    .outerdiv{
+        padding: 0;
+    }
+    .inerdiv{
+        width: 100%;
+    }
+    button{
+        width: 100%;
+    }
+}

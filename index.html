@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png">
+    <title>Spotify - Web Player: Music for everyone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script> -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="outer">
+            <div class="header">
+                 <div class="div1">
+                    <i id="logo" class="fa-brands fa-spotify"></i>
+                    
+                    
+                </div>
+                <div class="div2temp">
+                    <div class="home">
+                        <i id="home" class="fa-solid fa-house"></i>
+                    </div>
+                    <div class="div2">
+                        <i id="iconleft" class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="What do you want to play?">
+                        <div class="iconrightdiv">
+                             <i id="iconright" class="fa-solid fa-box-archive"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="div3">
+                    <div class="div31">
+                        <button style="background-color: white; color: black;">Explore Premium</button>
+                        <button id="installbtn">
+                            <i class="fa-solid fa-circle-arrow-down"></i>
+                            Install App
+                        </button >
+                    </div>
+                    <div class="div32">
+                        <i class="fa-solid fa-users"></i>
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+
+            <div class="main">   
+                <div class="sidebar">
+                    <div class="sidhead">
+                        <div class="sideheadleft">
+                            <div class="divout">
+                                <div class="divin"></div>
+                                <i class="fa-solid fa-angle-left"></i>
+                            </div>
+                            <span>Your Library</span>
+                        </div>
+                        <div class="sideheadright">
+                            <div class="plusdiv">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                            <i id="expandicon" class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                        </div>
+                    </div>
+                    
+                    <div id="sidbarbaner">
+                        <div class="sidbardiv">
+                        <span class="sidbartopspan">
+                            Creat your first playlist
+                        </span>
+                        <span class="sidbarmidspan">
+                            It's easy, we'll help you
+                        </span>
+                        <div class="sidbarbutton">
+                            <button>Create playlist</button>
+                        </div>
+                        </div>
+                        <div class="sidbardiv" style="height: 10.5rem;">
+                            <span class="sidbartopspan">
+                                Let's find some podcasts to follow
+                            </span>
+                            <span class="sidbarmidspan">
+                                We'll keep you updated on new episodes
+                            </span>
+                            <div class="sidbarbutton">
+                                <button>Browse podcasts</button>
+                            </div>
+                        </div>
+                        <div style="height: 15rem; width: 100%; background-color:rgb(20,20,20) ;"></div>
+                    </div>
+                    
+                </div> 
+
+                <div class="maincontant">
+                    
+                    <div class="outerbox">
+                        <div class="boxuptext">
+                            <a href="#" >Trending Songs</a>
+                            <a href="#" class="Show">Show all</a>
+                        </div>
+                        <div class="overflowx">
+                            <div class="box">
+                                <img src="Sahiba.jpg">
+                                <div class="bigplaybtn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <div class="name">
+                                    Sahiba
+                                </div>
+                                <p>Aditya Rikhari</p>
+                            </div>
+                            <div class="box">
+                                <img src="Saiyaara.jpg">
+                                <div class="bigplaybtn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <div class="name">Saiyaara(From "Aaiyaara)</div>
+                                <p>Tanishk Bagchi, Faheem Abdullah, Arslan Nizami,...</p>
+                            </div>
+                            <div class="box">
+                                <img src="At Peace.jpg">
+                                <div class="bigplaybtn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <div class="name">At Peace</div>
+                                <p>Karan Aujla, Lkky</p>
+                            </div>
+                            <div class="box">
+                                <img src="Blinding Lights.jpg">
+                                <div class="bigplaybtn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <div class="name">Blinding Light</div>
+                                <p>The Weeknd</p>
+                            </div>
+                            <div class="box">
+                                <img src="Dhun (From.jpg">
+                                <div class="bigplaybtn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <div class="name">Dhun(From "Saiyaara")</div>
+                                <p>Mithoon, Arijit Singh</p>
+                            </div>
+                            <div class="box">
+                                <img src="Pal Pal Dil Ke Paas - From.jpg">
+                                <div class="bigplaybtn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <div class="name">Pal Pal Dil Ke Paas-From "Blacmail"</div>
+                                <p>Kishore Kumar</p>
+                            </div>
+                            <div class="box">
+                                <img src="Ve Mahiya (From.jpg">
+                                <div class="bigplaybtn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <div class="name">Ve Mahiya (From "Sarxameen")</div>
+                                <p>B Prak, Kausar Munir, Vishal Khurana K</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="outerbox">
+                        <div class="boxuptext">
+                            <div class="bigplaybtn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            <a href="#" >Popular albums and singles</a>
+                            <a href="#" class="Show">Show all</a>
+                        </div>
+                        <div class="overflowx">
+                            <div class="box">
+                                <img src="Aashiqui 2.jpg">
+                                <div class="bigplaybtn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <div class="name">Aashiqui2</div>
+                                <p>Mithoon, Ankit Tiwari, Jeet Gannguli</p>
+                            </div>
+                            <div class="box">
+                                <img src="Yeh Jawaani Hai Deewani.jpg">
+                                <div class="bigplaybtn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <div class="name">Yeh Jawaani Hai Deewani</div>
+                                <p>Pritam</p>
+                            </div>
+                            <div class="box">
+                                <img src="Sanam Teri Kasam (Original Motion Picture Soundtrack).jpg">
+                                <div class="bigplaybtn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <div class="name">Sanam Teri Kasam (Original Motion...</div>
+                                <p>Himesh Reshmmiya, Sameer Anjaan, Subrat...</p>
+                            </div>
+                            <div class="box">
+                                <img src="Finding Her.jpg">
+                                <div class="bigplaybtn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <div class="name">Finding Her</div>
+                                <p>Kushagra, Bharath, Saaheal</p>
+                            </div>
+                            <div class="box">
+                                <img src="Young G.O.A.T.jpg">
+                                <div class="bigplaybtn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <div class="name">Young G.O.A.T</div>
+                                <p>Cheema Y, Gur Sidhu</p>
+                            </div>
+                            <div class="box">
+                                <img src="Raanjhan (From.jpg">
+                                <div class="bigplaybtn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <div class="name">Ranjhan (From "Do Patti")</div>
+                                <p>Sachet-Parampara, Parampara Tandon,...</p>
+                            </div>
+                            <div class="box">
+                                <img src="Ultimate Love Songs - Arijit Singh.jpg">
+                                <div class="bigplaybtn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <div class="name">Ultimat Love Songs-Arijit Singh</div>
+                                <p>Arijit Singh</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="outerbox">
+                        <div class="boxuptext">
+                            <a href="#" >Featured Charts</a>
+                            <a href="#" class="Show">Show all</a>
+                        </div>
+                        <div class="overflowx">
+                            <div class="box">
+                                <img src="card1img.jpeg">
+                                <p>Your daily update of the most plated...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upperlinediv"></div>
+                    <div class="contactdiv">
+                        <div class="contdiv1">
+                            <div class="head">Company</div>
+                            <a>About</a>
+                            <a>Jobs</a>
+                            <a>For the Record</a>
+                        </div>
+                        <div class="div2">
+                            <div class="head">Communities</div>
+                            <a>For Artists</a>
+                            <a>Developers</a>
+                            <a>Advertising</a>
+                            <a>Investors</a>
+                            <a>Vendors</a>
+                        </div>
+                        <div class="div3">
+                            <div class="head">Udeful links</div>
+                            <a>Support</a>
+                            <a>Free Mobile App</a>
+                        </div>
+                        <div class="div4">
+                            <div class="head">Spotify Plans</div>
+                            <a>Primium Individual</a>
+                            <a>Premium Duo</a>
+                            <a>Premimum Stydent</a>
+                            <a>Premium Family</a>
+                            <a>Premium Stydent</a>
+                            <a>Spotify Free</a>
+                        </div>
+                        <div class="div5">
+                            <div><i class="fa-brands fa-instagram"></i></div>
+                            <div><i class="fa-brands fa-twitter"></i></div>
+                            <div><i class="fa-brands fa-facebook"></i></div>
+
+                        </div>
+                    </div>
+
+                    <div class="downlinediv"></div>
+
+                    <div class="copyrightdiv">
+                        <div>
+                            <a>Legal</a>
+                            <a>Safety & Privacy Center</a>
+                            <a>Privacy Policy</a>
+                            <a>Cookies</a>
+                            <a>About Ads</a>
+                            <a>Accessibility</a>
+                        </div>
+                        <p> &copy; 2025 Spotify AB</p>
+                    </div>
+                    
+                    <div class="extradiv"></div>
+                </div>
+                
+            </div>
+
+
+
+
+        <div class="footer">
+            <div class="footerleft">
+                <div class="div1">
+                    <img src="Pani Di Gal.jpg">
+                </div>
+                <div class="div2">
+                    <p class="name">Pani Di Gal </p>
+                    <p class="singer">Maninder Butter, Asees Kaur, MixSingh</p>
+                </div>
+                <div class="div3">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+            <div class="footermid">
+                <div class="footermidtop">
+                    <img src="player_icon1.png">
+                    <img src="player_icon2.png">
+                    <img id="play" src="player_icon3.png">
+                    <img src="player_icon4.png">
+                    <img src="player_icon5.png">
+
+                </div>
+                <div class="footermidbotom">
+                    <div>00:35</div>
+                    <input class="prograce-bar" type="range" min="0" max="100">
+                    <div>03:57</div>
+                </div>
+            </div>
+            <div class="footerright">
+                <div class="fdiv1">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="div2">
+                    <i class="fa-solid fa-microphone"></i>
+                </div>
+                <div class="div3">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="div4">
+                    <i class="fa-solid fa-table-columns"></i>
+                </div>
+                <div class="volume">
+                    <i class="fa-solid fa-volume-low"></i>
+                    <input type="range" min="0" max="100">
+                </div>
+                <div class="div5">
+                    <i class="fa-regular fa-clone"></i>
+                </div>
+                <div class="div6">
+                    <i class="fa-solid fa-expand"></i>
+                </div>
+                
+            </div>
+        </div>
+            
+    </div>
+</body>
+</html>
